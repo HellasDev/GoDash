@@ -82,16 +82,39 @@ GoDash is a modern terminal-based productivity dashboard built with Go and the p
 
 ### Installation
 
+> **✅ All installation methods provide the complete GoDash experience with full Google Calendar integration - no additional setup or API keys required!**
+
+#### 🏛️ Arch Linux (AUR) - Recommended
+
 ```bash
-# Clone the repository
-git clone https://github.com/HellasDev/GoDash.git
-cd GoDash
+# Complete productivity dashboard with all features
+yay -S godash
+```
 
-# Build the application
-go build .
+#### 🚀 Direct Download (Pre-built Binary)
 
-# Run GoDash
-./GoDash
+**Latest Release - Ready to Use:**
+
+```bash
+# Download the latest pre-built binary
+wget https://github.com/HellasDev/GoDash/releases/download/v1.0.0-bin/godash-v1.0.0-linux-amd64.tar.gz
+tar -xzf godash-v1.0.0-linux-amd64.tar.gz
+
+# Install system-wide
+sudo cp godash-linux-amd64 /usr/local/bin/godash
+sudo chmod +x /usr/local/bin/godash
+
+# Run immediately with full features
+godash
+```
+
+**Portable Installation:**
+
+```bash
+# Download and run locally (no system installation)
+wget https://github.com/HellasDev/GoDash/releases/download/v1.0.0-bin/godash-v1.0.0-linux-amd64.tar.gz
+tar -xzf godash-v1.0.0-linux-amd64.tar.gz
+./godash-linux-amd64
 ```
 
 ### First Run Setup
