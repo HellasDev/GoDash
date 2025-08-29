@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐻‍❄️ GoDash 🐻‍❄️
+# GoDash
 
 ### Your Terminal Personal Productivity Dashboard
 
