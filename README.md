@@ -1,8 +1,6 @@
 <div align="center">
 
-# GoDash
-
-### Your Terminal Personal Productivity Dashboard
+# Your Terminal Personal Productivity Dashboard
 
 <img src="widgets/calendar/1761.png" alt="GoDash Logo" width="200"/>
 
