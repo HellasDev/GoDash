@@ -4,7 +4,7 @@
 
 ### Your Terminal Personal Productivity Dashboard
 
-<img src="widgets/calendar" alt="GoDash Logo" width="200"/>
+<img src="widgets/calendar/1761.png" alt="GoDash Logo" width="200"/>
 
 [![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?style=flat&logo=go)](https://golang.org/)
 [![TUI](https://img.shields.io/badge/TUI-Bubble%20Tea-FF69B4?style=flat)](https://github.com/charmbracelet/bubbletea)
