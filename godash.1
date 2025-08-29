@@ -1,0 +1,174 @@
+.\" GoDash man page
+.TH GODASH 1 "2025-01-29" "1.0" "User Commands"
+
+.SH NAME
+godash \- Terminal Personal Productivity Dashboard
+
+.SH SYNOPSIS
+.B godash
+[\fIOPTION\fR]
+
+.SH DESCRIPTION
+.B GoDash
+is a modern terminal-based productivity dashboard that combines task management, note-taking, calendar integration, and weather updates into a single, beautiful TUI (Text-based User Interface).
+
+Built with Go and the Charm ecosystem, GoDash provides an all-in-one solution for managing your daily productivity tasks directly from the terminal.
+
+.SH FEATURES
+.TP
+.B Task Management
+Create, edit, delete, and organize tasks with persistent storage and automatic saving.
+
+.TP
+.B Notes Manager
+Full Markdown support with dual-mode editor (preview/source), auto-save confirmation, and unsaved changes protection.
+
+.TP
+.B Google Calendar Integration
+OAuth 2.0 authentication with automatic and manual flows, daily event views, and calendar navigation.
+
+.TP
+.B Weather & Clock
+Real-time weather using wttr.in (no API key required) with beautiful ASCII art and live clock display.
+
+.SH KEYBOARD CONTROLS
+
+.SS Global Controls
+.TP
+.B Tab
+Cycle focus between panels
+.TP
+.B Ctrl+K
+Show help for current panel
+.TP
+.B Ctrl+Q
+Quit application
+
+.SS Todo List Panel
+.TP
+.B o
+Add new task
+.TP
+.B i
+Edit selected task
+.TP
+.B Ctrl+D
+Delete selected task
+.TP
+.B Space
+Toggle task completion
+.TP
+.B ↑/↓
+Navigate tasks
+.TP
+.B Enter
+Confirm add/edit
+.TP
+.B Esc
+Cancel add/edit
+
+.SS Notes Panel
+.TP
+.B o
+Create new note
+.TP
+.B e
+Edit selected note
+.TP
+.B Ctrl+D
+Delete selected note
+.TP
+.B ↑/↓
+Navigate notes
+.TP
+.B Enter
+Open note in editor
+
+.SS Note Editor
+.TP
+.B i
+Toggle between preview and edit mode
+.TP
+.B Ctrl+S
+Save note (shows confirmation)
+.TP
+.B Esc
+Exit editor (with unsaved changes protection)
+
+.SS Calendar Panel
+.TP
+.B ↑/↓/←/→
+Navigate calendar dates
+.TP
+.B Enter
+Open Google Calendar in browser
+.TP
+.B Ctrl+O
+Authorize/re-authorize calendar
+
+.SH FILES
+.TP
+.I ~/.config/GoDash/config.json
+Application configuration file
+.TP
+.I ~/.config/GoDash/token.json
+Google Calendar OAuth tokens
+.TP
+.I ~/.local/share/GoDash/notes/*.md
+User notes stored as Markdown files
+.TP
+.I ~/.local/share/GoDash/todo-list.json
+Task list data
+.TP
+.I ~/.local/share/GoDash/calendar_cache.json
+Cached calendar events
+
+.SH FIRST RUN
+On first launch, GoDash will guide you through a setup process:
+
+.IP "1." 4
+.B Weather Setup:
+Enter your city name for weather data
+.IP "2." 4
+.B Calendar Authorization:
+Authenticate with Google Calendar via OAuth
+
+.SH REQUIREMENTS
+.IP \(bu 2
+Go 1.24 or later (for building from source)
+.IP \(bu 2
+Terminal with Unicode support
+.IP \(bu 2
+Internet connection (for weather and calendar features)
+
+.SH PLATFORM SUPPORT
+.IP \(bu 2
+.B Linux:
+Full support (primary development platform)
+.IP \(bu 2
+.B macOS:
+Full support
+.IP \(bu 2
+.B Windows:
+Not supported due to terminal limitations
+
+.SH EXAMPLES
+.TP
+.B godash
+Start the application with the interactive dashboard
+
+.SH AUTHOR
+George Bereveskos <report@hellas.dev>
+
+.SH REPORTING BUGS
+Report bugs to: https://github.com/HellasDev/GoDash/issues
+
+.SH SEE ALSO
+For complete documentation and source code, visit:
+.br
+https://github.com/HellasDev/GoDash
+
+.SH COPYRIGHT
+Copyright (C) 2025 George Bereveskos. Licensed under the MIT License.
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.

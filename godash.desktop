@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=GoDash
+GenericName=Terminal Productivity Dashboard
+Comment=Your Terminal Personal Productivity Dashboard - Task management, notes, calendar & weather
+Exec=godash
+Icon=godash
+Terminal=true
+Categories=Office;ProjectManagement;Utility;
+Keywords=productivity;terminal;tui;todo;notes;calendar;weather;dashboard;
+StartupNotify=false
+MimeType=text/markdown;
