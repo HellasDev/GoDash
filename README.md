@@ -288,3 +288,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **George Bereveskos** ([@HellasDev](https://github.com/HellasDev))
 
 _Made with ❤️ and lots of ☕ in Greece_
+# Demo updated
