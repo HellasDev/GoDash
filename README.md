@@ -8,7 +8,7 @@
 [![TUI](https://img.shields.io/badge/TUI-Bubble%20Tea-FF69B4?style=flat)](https://github.com/charmbracelet/bubbletea)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey?style=flat)](#platform-support)
-[![Sponsor](https://img.shields.io/badge/Sponsor-❤️-ff69b4?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/HellasDev)
+[![Sponsor](https://img.shields.io/badge/Sponsor-❤️-ff69b4?style=flat&logo=github-sponsors)](https://github.com/sponsors/HellasDev)
 [![Downloads](https://img.shields.io/github/downloads/HellasDev/GoDash/total?style=flat&color=blue)](https://github.com/HellasDev/GoDash/releases)
 
 _A sleek, all-in-one personal productivity dashboard that runs directly in your terminal_
