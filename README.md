@@ -29,7 +29,10 @@ _A sleek, all-in-one personal productivity dashboard that runs directly in your 
 
 ## 📹 Demo
 
-![GoDash Demo](./assets/godash_demo.gif)
+<video width="100%" controls>
+  <source src="./assets/godash_trimmed.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
 *GoDash in action - managing todos, notes, calendar, and weather in one unified terminal dashboard*
 
