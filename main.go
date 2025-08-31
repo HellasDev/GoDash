@@ -6,6 +6,7 @@ import (
 	"os/exec"
 	"runtime"
 	"time"
+	"golang.org/x/term"
 
 	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
@@ -28,6 +29,11 @@ func min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+// isatty checks if we have a TTY terminal
+func isatty() bool {
+	return term.IsTerminal(int(os.Stdin.Fd()))
 }
 
 // renderAppLogo returns a stylized ASCII logo for GoDash
@@ -1059,7 +1065,17 @@ func main() {
 		os.Exit(1)
 	}
 
-	p := tea.NewProgram(initialModel(settings), tea.WithAltScreen(), tea.WithMouseAllMotion())
+	var opts []tea.ProgramOption
+	opts = append(opts, tea.WithAltScreen())
+	opts = append(opts, tea.WithMouseAllMotion())
+	
+	// Try to use provided stdin/stdout, fallback to default if issues
+	if isatty() {
+		opts = append(opts, tea.WithInput(os.Stdin))
+		opts = append(opts, tea.WithOutput(os.Stderr))
+	}
+	
+	p := tea.NewProgram(initialModel(settings), opts...)
 	if _, err := p.Run(); err != nil {
 		fmt.Println("Error running program:", err)
 		os.Exit(1)

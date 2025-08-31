@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=GoDash
 Comment=Terminal Personal Productivity Dashboard
-Exec=sh -c 'cd && godash'
+Exec=godash
 Icon=godash
 Type=Application
 Categories=Office;Productivity;Utility;
 Terminal=true
+Path=%h
 StartupNotify=false
 Keywords=productivity;dashboard;tasks;notes;calendar;
