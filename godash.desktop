@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GoDash
+Comment=Terminal Personal Productivity Dashboard
+Exec=godash
+Icon=godash
+Type=Application
+Categories=Office;Productivity;Utility;
+Terminal=true
+StartupNotify=false
+Keywords=productivity;dashboard;tasks;notes;calendar;
