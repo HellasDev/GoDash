@@ -29,7 +29,11 @@ _A sleek, all-in-one personal productivity dashboard that runs directly in your 
 
 GoDash is a modern terminal-based productivity dashboard built with Go and the powerful Charm ecosystem. It seamlessly combines task management, note-taking, calendar integration, and weather updates into a single, beautiful, and responsive TUI (Text-based User Interface).
 
-![GoDash Screenshot](https://raw.githubusercontent.com/HellasDev/GoDash/main/GoDash.gif)
+<div align="center">
+  <img src="widgets/demo.gif" alt="GoDash Live Demo" width="100%"/>
+  <br/>
+  <em>✨ See GoDash in action - your personal productivity dashboard right in the terminal</em>
+</div>
 
 ---
 
